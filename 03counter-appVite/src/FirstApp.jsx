@@ -11,13 +11,15 @@ const FirstApp = ({title,subtitle,name }) => {
 
 
 
-return (
-    <>      
-          <h1>{title}</h1>
-          <p>{subtitle}</p>
-          <span>{name}</span>
-    </>
-    )
+            return (
+                    <>      
+                        <h1 data-testid="test-title">{title}</h1> 
+                        <p>{subtitle}</p>
+                        <p>{subtitle}</p>
+                        <p>{subtitle}</p>
+                        <span>{name}</span>
+                    </>
+                )
 }
 
 export{
@@ -28,7 +30,7 @@ export{
 
 FirstApp.propTypes={
     title:PropTypes.string.isRequired,
-    subtitle: PropTypes.number.isRequired,
+    subtitle: PropTypes.string,
 
 
 
@@ -37,8 +39,8 @@ FirstApp.propTypes={
 /* estas propiedades entran antes que lso PropTypes */
 FirstApp.defaultProps={
     name:'RaJSo',
-    subtitle:'123',
-    title:'No hay titulo',
+    subtitle:'no hay subtitulo',
+    /* title:'No hay titulo', */
 
      
 

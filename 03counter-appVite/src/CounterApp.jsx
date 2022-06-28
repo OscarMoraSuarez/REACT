@@ -21,21 +21,21 @@ const CounterApp=({value})=>{
     
     const resetear = () => setCounter( value) ;
 
- 
+    
    
 
 return(
 
     <>
         <h1> CounterApp </h1>
-        <h2> { counter } </h2>
-        <button onClick={ sumar }> 
+        <h2 data-testid="counter"> { counter } </h2>
+        <button aria-label='btn-sumar' onClick={ sumar }> 
         +1
         </button>
-        <button onClick={ restar }> 
+        <button aria-label='btn-restar' onClick={ restar }> 
         -1 
         </button >
-        <button onClick={ resetear }> 
+        <button id='btn-reset' onClick={ resetear }> 
         reset
         </button>
     </>
@@ -63,10 +63,10 @@ CounterApp.propTypes={
 
 }
 
-CounterApp.defaultProps={
+/* CounterApp.defaultProps={
 
-    value:456,
+    value:100, 
 
 }
-
+ */
     

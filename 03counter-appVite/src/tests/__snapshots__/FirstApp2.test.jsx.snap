@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FirsApp/> debe hacer macth con el sanpshot 1`] = `
+<div>
+  <h1
+    data-testid="test-title"
+  >
+    Hola, soy Goku
+  </h1>
+  <p>
+    no hay subtitulo
+  </p>
+  <p>
+    no hay subtitulo
+  </p>
+  <p>
+    no hay subtitulo
+  </p>
+  <span>
+    RaJSo
+  </span>
+</div>
+`;
